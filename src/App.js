@@ -1,5 +1,6 @@
 import './sass/main.scss';
 import moment from 'moment';
+import React from "react"
 import { useState } from "react";
 
 const CODE = "Code";
@@ -38,37 +39,17 @@ function Header() {
     let social_media = [{
             keywork: 'Email',
             icon: 'fas fa-envelope-square',
-            link: 'mailto:contact@ines-almeida.com',
-        },
-        {
-            keywork: 'LinkedIn',
-            icon: 'fab fa-linkedin',
-            link: 'https://www.linkedin.com/in/ines-de-almeida/',
+            link: 'dbrit@utexas.edu',
         },
         {
             keywork: 'Github',
             icon: 'fab fa-github',
-            link: 'https://github.com/ineesalmeida',
+            link: 'https://github.com/Dbrit',
         },
         {
-            keywork: 'Launchpad',
-            icon: 'fa fa-rocket',
-            link: 'https://launchpad.net/~ines-almeida',
-        },
-        {
-            keywork: 'Google Scholar',
-            icon: 'fas fa-graduation-cap',
-            link: 'https://scholar.google.com/citations?user=MDKePnkAAAAJ&hl=en',
-        },
-        {
-            keywork: 'Instagram',
-            icon: 'fab fa-instagram',
-            link: 'https://www.instagram.com/inees_almeida/',
-        },
-        {
-            keywork: 'CV',
+            keywork: 'Resume',
             icon: 'fas fa-file-alt',
-            link: './cv',
+            link: './Dakota_Britton_Resume.pdf',
         },
     ]
 
@@ -78,13 +59,13 @@ function Header() {
                 <div className = 'header' >
                     <img src = { process.env.PUBLIC_URL + '/me.jpg' } className = "header__picture" alt = "me" />
                     <div className = "header__text" >
-                        <h1 > Inês </h1><h1> Almeida</h1>
+                        <h1 > Dakota </h1><h1> Britton</h1>
                         <br/>
-                        <h2 > Software Engineer </h2><h2> | </h2> 
-                        <h2> Biomedical Engineer MSc </h2> 
+                        <h2 > Electrical Engineer </h2><h2> | </h2> 
+                        <h2> Imaging Researcher </h2> 
                         <br/>
                         <div className = "network tooltip" > { social_media.map(s => < SocialMedia key = { s.keywork } {...s } />)} 
-                            <span className = "tooltiptext" > Email: contact@ines-almeida.com </span>
+                            <span className = "tooltiptext" > dbrit@utexas.edu </span>
                         </div > 
                     </div> 
                 </div> 
